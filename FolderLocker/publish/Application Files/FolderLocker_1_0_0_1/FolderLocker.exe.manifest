@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FolderLocker.exe" version="1.0.0.1" publicKeyToken="b3a7bbe7d9540632" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FolderLocker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FolderLocker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FolderLocker.exe" size="63416">
+      <assemblyIdentity name="FolderLocker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/NShtpSJAMsrMaWTa8f+6Xo2cBmG/6tnZlpT0A2DhyA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=YUMASTER\yumas" issuerKeyHash="a809a1484437be47471f6be0497644b7b1cad346" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7lLzHYIxKKxBsQ4KOf/CU+bQVJvM6ppvgbly5pnyOBs=</DigestValue></Reference></SignedInfo><SignatureValue>ZYRAco32+P64o/WV1008BK5iXKjjyTp6vwk8guXbN6PdSrQ1x1SZ5/PykGrJa0Eo801NPAKEy+092+rcB+/wM5jgfKpE5Q7dtaJGDdbN4cGI6HVDw0JATkpvj0s72hBzyUuTETPhOSCo4vIGfj0XSHXgL2VR42eqJv3ANn7O5vs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>px0tEzXazZD7g3008osdahEQFK5Z9zJh7SKNu3m+kDTQJNoXovT9s+rzVposRVGacgiGl8wjTi9MRNbVDUdBNr/6bUj1ywwyoXDkUPnKfKjPSZHbogCZ50DzIxyuf9XNu4y8FXds/48JPhudCKC2L+eG2tv13yYUk4+KhAQy6q0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1b38f299e672b9816f9aeacc9b54d0e653c2ff390a0eb141ac2831821df352ee" Description="" Url=""><as:assemblyIdentity name="FolderLocker.exe" version="1.0.0.1" publicKeyToken="b3a7bbe7d9540632" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=YUMASTER\yumas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kKEXZVNJDCosjsllVuMH27xnP4r5qemA+gS7Cu8tKWo=</DigestValue></Reference></SignedInfo><SignatureValue>FU8rJ5Tu3eo+F5ePnAQzBszq42OR9Fis/lJ9lYMkOZ2JXOuP9hy27T9Ph4Gi8QkHU26IU9PYwLYqQ97N7KlXMLquY5sQmbX4Ik2A6JIWdq5Fo0ZLU7GSJwcvxalfkstA2mpnuraZJFOWFVmMwtpWp02PJnQP02kfF9mUvwHIT34=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>px0tEzXazZD7g3008osdahEQFK5Z9zJh7SKNu3m+kDTQJNoXovT9s+rzVposRVGacgiGl8wjTi9MRNbVDUdBNr/6bUj1ywwyoXDkUPnKfKjPSZHbogCZ50DzIxyuf9XNu4y8FXds/48JPhudCKC2L+eG2tv13yYUk4+KhAQy6q0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQFWzh58AeeJpPRZqVKkfcFjANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAWQBVAE0AQQBTAFQARQBSAFwAeQB1AG0AYQBzMB4XDTIwMDgxNDA2NDIyMVoXDTIxMDgxNDEyNDIyMVowJzElMCMGA1UEAx4cAFkAVQBNAEEAUwBUAEUAUgBcAHkAdQBtAGEAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEApx0tEzXazZD7g3008osdahEQFK5Z9zJh7SKNu3m+kDTQJNoXovT9s+rzVposRVGacgiGl8wjTi9MRNbVDUdBNr/6bUj1ywwyoXDkUPnKfKjPSZHbogCZ50DzIxyuf9XNu4y8FXds/48JPhudCKC2L+eG2tv13yYUk4+KhAQy6q0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAR6kAe9ZKTJNbecvQ6y1EBayKPm6RFpUUHHEnnvuzUvc/SBb8uIcjd1EDCeuSQLngeQGZm2yPhZjwOHOGQfBicivBXYRaaHb+dKNZu0mzGCKJ768toz1t7sIh69LvEIJ2Sy++kfHcADbQDOMTBq9LsPHFpTxs9ovH4qWeya6r6cg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
