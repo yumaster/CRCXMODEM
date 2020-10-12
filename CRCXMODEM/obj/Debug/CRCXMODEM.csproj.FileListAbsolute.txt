@@ -1,0 +1,7 @@
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\bin\Debug\CRCXMODEM.exe.config
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\bin\Debug\CRCXMODEM.exe
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\bin\Debug\CRCXMODEM.pdb
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\obj\Debug\CRCXMODEM.csprojAssemblyReference.cache
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\obj\Debug\CRCXMODEM.csproj.CoreCompileInputs.cache
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\obj\Debug\CRCXMODEM.exe
+C:\Users\yumas\Desktop\CRCXMODEM\CRCXMODEM\obj\Debug\CRCXMODEM.pdb
