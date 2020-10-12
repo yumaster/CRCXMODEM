@@ -1,7 +1,9 @@
 # CRCXMODEM
 CRC-XMODEM 算法
 
-主方法调用-SendData
+> 主方法调用-SendData
+
+```
 static void Main(string[] args)
 {
     // 配置串口
@@ -40,7 +42,10 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 
-CRC/XMODEL算法
+```
+
+> CRC/XMODEL算法
+```
 /// <summary>
 /// 高位在前，低位在后
 /// </summary>
@@ -74,3 +79,4 @@ public static byte[] GetCrcByByteArray(byte[] x, int len) //CRC校验函数
     temdata[1] = (byte)(crc & 0xFF);
     return temdata;
 }
+```
