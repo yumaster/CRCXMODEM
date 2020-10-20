@@ -15,6 +15,18 @@ namespace CRCXMODEM
 
         static void Main(string[] args)
         {
+
+            string ddd = FunLib.使能前端进卡;
+
+            Console.WriteLine(ddd);
+
+
+            //string sss = StrCommon.GetEnumText(FunList.初始化不移动卡);
+            //Console.WriteLine(sss);
+
+
+            Console.ReadLine();
+
             // 配置串口
             port = new SerialPort("COM3");
             port.BaudRate = 115200;
@@ -38,22 +50,24 @@ namespace CRCXMODEM
             if (th1 != null)
                 th1.Start();
 
-            SendData(StrCommon.GetEnumText(FunList.初始化不移动卡));
             Console.ReadLine();
 
-            SendData(StrCommon.GetEnumText(FunList.查卡机状态));
+            SendData(StrCommon.GetEnumText(FunList.初始化不移动卡), FunList.初始化不移动卡.ToString());
             Console.ReadLine();
 
-            SendData(StrCommon.GetEnumText(FunList.将卡移动到RF卡位));
+            SendData(StrCommon.GetEnumText(FunList.查卡机状态), FunList.查卡机状态.ToString());
             Console.ReadLine();
 
-            SendData(StrCommon.GetEnumText(FunList.将卡移到出卡口持卡位));
+            SendData(StrCommon.GetEnumText(FunList.将卡移动到RF卡位), FunList.将卡移动到RF卡位.ToString());
             Console.ReadLine();
 
-            SendData(StrCommon.GetEnumText(FunList.使能前端进卡));
+            SendData(StrCommon.GetEnumText(FunList.将卡移到出卡口持卡位), FunList.将卡移到出卡口持卡位.ToString());
             Console.ReadLine();
 
-            SendData(StrCommon.GetEnumText(FunList.将卡移动到发卡栈));
+            SendData(StrCommon.GetEnumText(FunList.使能前端进卡), FunList.使能前端进卡.ToString());
+            Console.ReadLine();
+
+            SendData(StrCommon.GetEnumText(FunList.将卡移动到发卡栈), FunList.将卡移动到发卡栈.ToString());
             Console.ReadLine();
         }
 
@@ -70,12 +84,12 @@ namespace CRCXMODEM
             }
         }
         // 发送线程
-        public static void SendData(string comStr)
+        public static void SendData(string comStr,string cmdName)
         {
             string cmd = StrCommon.GetSerialCommand(comStr);
             byte[] cmdByteArr = StrCommon.GetByteArrayByHexStr(cmd);
             port.Write(cmdByteArr, 0, cmdByteArr.Length);
-            Console.WriteLine("发送线程:" + cmd);
+            Console.WriteLine("发送线程-" + cmdName + ":" + cmd);
         }
         
     }

@@ -12,7 +12,7 @@ namespace CRCXMODEM
     public class CRCCore
     {
         /// <summary>
-        /// 高位在前，低位在后
+        /// 获取CRC校验数组
         /// </summary>
         /// <param name="x"></param>
         /// <param name="len"></param>
@@ -27,7 +27,6 @@ namespace CRCXMODEM
                 0x8108,0x9129,0xa14a,0xb16b,0xc18c,0xd1ad,0xe1ce,0xf1ef };
             while (len-- != 0)
             {
-
                 da = (byte)(((byte)(crc / 256)) / 16);
                 crc <<= 4;
                 crc ^= yu[da ^ x[i] / 16];

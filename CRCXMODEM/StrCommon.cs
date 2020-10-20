@@ -102,7 +102,7 @@ namespace CRCXMODEM
             string firstStr = StrCommon.GetHexStrByByteArray(bArray).Replace(" ","");
 
             byte[] crcArray = CRCCore.GetCrcByByteArray(bArray, bArray.Length);
-            string crcStr = StrCommon.GetHexStrByByteArray(crcArray).Replace(" ", ""); ;
+            string crcStr = StrCommon.GetHexStrByByteArray(crcArray).Replace(" ", "");
             //firstStr + crcStr
             string retStr = (firstStr + crcStr).ToCharArray().Aggregate("", (result, c) => result += ((!string.IsNullOrEmpty(result) && (result.Length + 1) % 3 == 0) ? " " : "") + c.ToString());
             return retStr;

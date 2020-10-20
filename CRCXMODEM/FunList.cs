@@ -16,6 +16,8 @@ namespace CRCXMODEM
         public static string 使能前端进卡 { get { return StrCommon.GetSerialCommand("C30"); } }
         public static string 将卡移动到发卡栈 { get { return StrCommon.GetSerialCommand("C24"); } }
     }
+
+
     /// <summary>
     /// 命令列表，eg.C03->43 30 33
     /// 获取枚举描述文本
@@ -53,6 +55,7 @@ namespace CRCXMODEM
         public string Text
         {
             get { return text; }
+            //get { return StrCommon.GetSerialCommand(this.text); }
             set { text = value; }
         }
     }
